@@ -14,6 +14,8 @@ public class Amusement {
     }
     public void setComplexity(float complexity) { this.complexity = complexity;}
     public void setPrice(float price){this.price = price;}
+    public void setPlace(String place){this.place = place;}
+    public void setInventory(String inventory){this.inventory = inventory;}
 
     private float getPrice() {
         return price;
@@ -27,6 +29,8 @@ public class Amusement {
     private float getComplexity() {
         return complexity;
     }
+    private String getInventory() { return  inventory;}
+
 
     //Methods
 
@@ -54,10 +58,12 @@ public class Amusement {
        Amusement tennis = new Amusement();
        tennis.setPrice(1000);
        tennis.setAge(10);
-
+      Amusement football = new Amusement();
+      football.setPlace("Field");
+      football.setInventory("Ball");
 
        System.out.println("Price and Age :" +" " + tennis.getPrice()  + "and" + tennis.getAge() );
-
+       System.out.println("Place and Inventory:" + football.getPlace() + "--" + football.getInventory() );
    }
 
 }
