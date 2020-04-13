@@ -59,14 +59,22 @@ public class Garment {
         if (manufacturer == "very good")
             price = price * 5;
     }
+    private static void manufacturerСhoice(String whichOf) {
+        for (String a = whichOf; a == "USA"; ) {
+            System.out.println("Ukraine");
+            System.out.println(a);
+        }
+    }
     public void clothingTypeSelection(String clothes) {
         switch (clothes) {
             case "Sports":
+                manufacturerСhoice("London");
                 betterManufacturerBigExpensivePrice = betterManufacturerBigExpensivePrice *2;
                 goodQualityTheBodyDoesNotSoar = true;
                 forEachOccupationItsOwnTypeOfFabric = true;
                 bestForeignManufacturer = "USA";
             case "Diplomatic":
+                manufacturerСhoice("Kiev");
                 betterManufacturerBigExpensivePrice = betterManufacturerBigExpensivePrice *5;
                 goodQualityTheBodyDoesNotSoar = true;
                 forEachOccupationItsOwnTypeOfFabric = true;
@@ -77,6 +85,7 @@ public class Garment {
         Garment pants = new Garment();
         pants.setManufacturer("USA");
         pants.setPrice(500);
+        pants.manufacturerСhoice("Kiev");
         Garment shirt = new Garment();
         shirt.setManufacturer("Ukraine");
         shirt.setPrice(20);
