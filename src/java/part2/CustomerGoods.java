@@ -90,6 +90,7 @@ public class CustomerGoods {
         CustomerGoods fruit = new CustomerGoods();
         fruit.setPrice(1000);
         fruit.setManufacturer("Africa");
+        fruit.chooseAFruit("apple");
         System.out.println(fruit.getPrice() + fruit.getManufacturer());
         System.out.println( "My pizza price is "+ pizza.getPrice() +pizza.getCurrency());
     }

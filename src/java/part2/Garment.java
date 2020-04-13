@@ -5,9 +5,14 @@ public class Garment {
     private String manufacturer;
     private String color;
     private String style;
-    private int price;
     private String age;
     private String material;
+    private String bestForeignManufacturer;
+    private int price;
+    private int betterManufacturerBigExpensivePrice;
+    private boolean goodQualityTheBodyDoesNotSoar;
+    private boolean forEachOccupationItsOwnTypeOfFabric;
+
 
     public void setManufacturer(String manufacturer) { this.manufacturer = manufacturer; }
 
@@ -53,6 +58,20 @@ public class Garment {
     private void manufacturerGoodPriceMoreExpensive(String manufacturer) {
         if (manufacturer == "very good")
             price = price * 5;
+    }
+    public void clothingTypeSelection(String clothes) {
+        switch (clothes) {
+            case "Sports":
+                betterManufacturerBigExpensivePrice = betterManufacturerBigExpensivePrice *2;
+                goodQualityTheBodyDoesNotSoar = true;
+                forEachOccupationItsOwnTypeOfFabric = true;
+                bestForeignManufacturer = "USA";
+            case "Diplomatic":
+                betterManufacturerBigExpensivePrice = betterManufacturerBigExpensivePrice *5;
+                goodQualityTheBodyDoesNotSoar = true;
+                forEachOccupationItsOwnTypeOfFabric = true;
+                bestForeignManufacturer = "Ukraine - Voronin";
+        }
     }
     public static void main(String[] args){
         Garment pants = new Garment();
