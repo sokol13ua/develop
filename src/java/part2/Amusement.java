@@ -72,11 +72,6 @@ public class Amusement {
             price = price * 2;
     }
 
-    public void moreInventoryMorePrice(String inventory) {
-        if (inventory == "a lot of")
-            price = price * 3;
-    }
-
     public void lessInventoryLessNoisiness(String inventory) {
         if (inventory == "little inventory")
             noisiness = noisiness - 10;
@@ -100,7 +95,7 @@ public class Amusement {
     }
 
     public void chooseEntertainment(String entertainment) {
-        switch (entertainment) {
+        switch(entertainment) {
             case "Bowling":
                 pickABall ("Average");
                 ageForTheGame = 16;
@@ -118,7 +113,6 @@ public class Amusement {
                 handHeldFishingRod = "Spinning";
                 clothesForFishingWarm = "Thermal underwear";
                 fishTackle = true;
-
         }
     }
     public static void main(String[] args){
@@ -126,8 +120,13 @@ public class Amusement {
         bowling.setPrice (10000);
         bowling.setPlace("Stadium");
         bowling.pickABall("Small");
+        bowling.complexityDependsOnAge(16);
+        bowling.moreComplexityLessAge(65);
         Amusement fishing = new Amusement();
+        fishing.chooseEntertainment("Fishing");
         fishing.setPrice(5000);
+        fishing.lessInventoryLessNoisiness("minimally");
+        fishing.сhangePriceDependOnPlace("grid");
         fishing.setInventory("Spinning");
         fishing.сhooseAPond("Sea");
         System.out.println("Bowling:"+ bowling.getPrice() + bowling.getPlace());

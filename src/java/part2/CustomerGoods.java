@@ -40,9 +40,7 @@ public class CustomerGoods {
         if( color=="yellow")
             price = (float) (price*1.2);
     }
-    public  String showManufacturerAndPrice(){
-        return manufacturer + " - " + price;
-    }
+
     public void morePackagingMorePrice(String packaging){
         if(packaging == "quality")
             price = (float) (price * 2.5);
@@ -87,7 +85,12 @@ public class CustomerGoods {
         CustomerGoods pizza = new CustomerGoods();
         pizza.setPrice(100);
         pizza.setCurrency("dollar");
+        pizza.morePackagingMorePrice("big box");
+        pizza.сhangePriceDependOnColor("red");
+        pizza.lessShelfLifeLessprice("2 days");
+        pizza.naturalIngredientsShelfLifeSmall("natural");
         CustomerGoods fruit = new CustomerGoods();
+        fruit.chooseProducts("Fruit");
         fruit.setPrice(1000);
         fruit.setManufacturer("Africa");
         fruit.chooseAFruit("apple");

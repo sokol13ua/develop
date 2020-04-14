@@ -113,7 +113,14 @@ public class TouchScreenDevice {
         telephone.setPrice(10000);
         telephone.chooseBrand("Apple");
         telephone.setOperatingSystem("IOS");
-        System.out.println(telephone.getManufacturer() + telephone.getPrice() + telephone.getOperatingSystem());
+        telephone.BetterModelMorePrice("iPhone");
+        telephone.iOSOperatingSystemBatteryHoldsBetter("IOS");
+        telephone.morePrestigiousManufacturerMorePrice("USA");
+        telephone.moreBodyiVewMorePrice("10");
+        telephone.selectDevice("Telephone");
+        telephone.moreBatteryMoreManufacturer(5000);
+        System.out.println(telephone.getManufacturer() + telephone.getPrice()
+                + telephone.getOperatingSystem());
     }
 }
 

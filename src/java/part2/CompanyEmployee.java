@@ -123,10 +123,16 @@ public class CompanyEmployee {
         public static void main (String[]args){
             CompanyEmployee director = new CompanyEmployee();
             director.setSalary("500");
+            director.moreAgeMoreExperience("25 year");
             director.setAge(50);
             director.chooseACar("Mercedes");
+            director.moreAgeMoreSalary("50");
+            director.chooseEmployee("Director");
             CompanyEmployee driver = new CompanyEmployee();
+            driver.moreAgeMoreSeniors("65");
+            driver.thereIsACarThereAreRights(true);
             driver.setSalary("200");
+            driver.olderAgeMoreChildren("55");
             driver.setAge(45);
             director.chooseACar("VAZ");
             System.out.println("Salary and age for director:" + director.getSalary() + "and" + director.getAge());

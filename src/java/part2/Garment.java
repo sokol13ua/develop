@@ -2,14 +2,14 @@ package part2;
 
 public class Garment {
     // Attributes
+    private int price;
+    private int betterManufacturerBigExpensivePrice;
     private String manufacturer;
     private String color;
     private String style;
     private String age;
     private String material;
     private String bestForeignManufacturer;
-    private int price;
-    private int betterManufacturerBigExpensivePrice;
     private boolean goodQualityTheBodyDoesNotSoar;
     private boolean forEachOccupationItsOwnTypeOfFabric;
 
@@ -85,8 +85,14 @@ public class Garment {
         Garment pants = new Garment();
         pants.setManufacturer("USA");
         pants.setPrice(500);
+        pants.biggerAgeIsDarkerColor("black");
         pants.manufacturerСhoice("Kiev");
+        pants.betterMaterialBetterPrice("catonn");
+        pants.clothingTypeSelection("Diplomatic");
         Garment shirt = new Garment();
+        shirt.manufacturerGoodPriceMoreExpensive("USA");
+        shirt.moreStylishClothesMoreExpensivePrice("dealer");
+        shirt.colorWhitePriceCheaper("white");
         shirt.setManufacturer("Ukraine");
         shirt.setPrice(20);
         System.out.println("The price of a shirt depends on the manufacturer:"

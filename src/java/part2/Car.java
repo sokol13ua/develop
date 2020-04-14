@@ -46,9 +46,7 @@ public class Car {
     private String theLampOnTheTidyFlashes;
     private String theLampOnTheTidyLightsUp;
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+    public void setPrice(int price) { this.price = price; }
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
@@ -148,6 +146,9 @@ public class Car {
     public static void main(String[]   arg){
     Car mercedes = new Car();
     mercedes.setPrice(100000);
+    mercedes.pressPedal("Gas");
+    mercedes.shiftGear("Drive");
+    mercedes.turnOnTheLever("Turn signals");
     mercedes.setManufacturer("Germany");
     mercedes.turnOnTheLight("Shine");
     mercedes.makeBeep(1);

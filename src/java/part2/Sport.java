@@ -118,16 +118,19 @@ public class Sport {
             Sport bigTennis = new Sport();
             bigTennis.setInventory("Racket");
             bigTennis.setView("Court");
+            bigTennis.moreInventoryMorePrice(5);
             bigTennis.pickARacket("Professional");
-
+            bigTennis.chooseTheTypeOfTennis("Large");
             Sport volleyball = new Sport();
             volleyball.setPrice(1000);
             volleyball.setAge("10");
-
+            volleyball.atAGreaterAgeHalfThePrice("old");
+            volleyball.lessInventoryLessPrice(10);
             Sport football = new Sport();
             football.setPlace("Field");
             football.setInventory("Ball");
-
+            football.moreLoadLessAge("old");
+            football.morePlaceOfEmploymentMorePeapleView("stadium");
             System.out.println("Price and Age :" + " " + volleyball.getPrice() + "--" + volleyball.getAge());
             System.out.println("Place and Inventory:" + football.getPlace() + "--" + football.getInventory());
             System.out.println("Inventory and View for tennis :"
