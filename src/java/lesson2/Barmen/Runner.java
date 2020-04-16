@@ -10,5 +10,9 @@ public class Runner {
         restaurant.setJob("МАМА МАНАНА");
         restaurant.setName("Девушка");
         System.out.println(restaurant.getName() + " на данный момент работает в ресторане " + restaurant.getJob());
+        BarmenTechnique technology = new BarmenTechnique();
+        technology.setTechnics("Фристайла ");
+        System.out.println(business.getName() + " закончив " + business.getUniversity() + " получила навыки : "
+        + technology.getTechnics());
     }
 }
